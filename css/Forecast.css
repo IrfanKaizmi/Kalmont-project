@@ -1,0 +1,239 @@
+head {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: red;
+  padding: 8px 18px;
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  padding: 0 24px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+
+.search_bar {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.search_bar input[type="text"] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.search_bar input[type="text"]:focus {
+  outline: none;
+  border: none;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a,
+  .topnav input[type="text"] {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 1px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  background-image: url(../img/Group\ 196.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+
+  height: 20%;
+}
+
+.hero-content p {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 1px 12px 1px 21px;
+}
+.heor {
+  margin-top: 20px;
+}
+.hero-content {
+  font-size: 30px;
+  grid-template-columns: auto auto;
+  display: flex;
+  margin: 10px 50px 1px 50px;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 74px;
+}
+
+h3 {
+  color: rgb(255, 0, 0);
+  font-size: 25px;
+}
+h2 {
+  font-size: 2rem;
+}
+.background-img {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img//traning.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 35px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.col-3 button {
+  background-color: rgb(255, 0, 0);
+  border: black;
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 25px;
+  width: 160px;
+  height: 54px;
+}
+.col-3 button a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.col-3 button:hover {
+  background-color: azure;
+  padding: 12px;
+  border-radius: 25px;
+}
+.footer {
+  background-color: gray;
+  margin-top: 100;
+  width: 100%;
+  padding: 40px 0;
+  color: white;
+  display: flex;
+}
+
+.footer div {
+  text-align: left;
+  display: grid;
+}
+
+.footer div h3 {
+  font-size: 30px;
+  margin-bottom: 1px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+}
+.col-1 {
+  display: block;
+  text-decoration: none;
+  flex-grow: 3;
+  padding: 8px;
+  margin-left: 50px;
+}
+
+.col-2 {
+  display: block;
+  text-decoration: none;
+  flex-grow: 1;
+}
+.col-2 a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 13px;
+  color: white;
+}
+
+.col-3 {
+  display: block;
+  text-decoration: none;
+  padding: 8px;
+  margin-right: 50px;
+}
+.col-3 p {
+  padding: 0;
+  margin: 0;
+}
+h4 {
+  color: white;
+  font-size: 30px;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content-col {
+  justify-content: center;
+  margin: 30px;
+  background-color: rgb(223, 243, 247);
+  border-radius: 45px;
+  border: 1px solid black;
+}
+
+.content-col img {
+  width: 11rem;
+  height: 12rem;
+  margin: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
